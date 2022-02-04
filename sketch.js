@@ -86,7 +86,8 @@ function draw() {
   if (arrowGroup.isTouching(redB)) 
   //if (arrowGroup.Collide(redB)) 
   //if (arrowGroup.isCollide(redB)) 
-  if(frameCount>700)//comment this line after selecting the solution
+  //if(frameCount>700)
+    //comment this line after selecting the solution
   {
     redB.destroyEach();
     gameState=END; 
@@ -108,11 +109,11 @@ function draw() {
 destroy the blue balloon when hit 
 by the arrows */
 
-//  if (arrowGroup.isTouching(blueB)) {
-//   blueB.destroyEach();
-//   arrowGroup.destroyEach();
-//   score=score+2;
-// }
+  if (arrowGroup.isTouching(blueB)) {
+   blueB.destroyEach();
+   arrowGroup.destroyEach();
+   score=score+2;
+ }
 
 
  if (arrowGroup.isTouching(redB)) {
